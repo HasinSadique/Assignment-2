@@ -1,79 +1,101 @@
-body {
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:ital,wght@0,400;1,500&display=swap');
 
-main {
-    margin: 0px 100px 100px 100px;
-}
+/* FOR MOBILE */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 100px 0px 100px;
-}
-
-nav span h3 {
-    margin: 0px;
-    font-size: x-large;
-}
-
-.anchors a {
-    text-decoration: none;
-    margin-left: 30px;
-    text-align: center;
-    align-content: center;
-}
-
-
-/*---------------
- Section-1 
- ----------------*/
-
-.section1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 10%;
-}
-
-.section1 div img {
-    width: 80%;
-    margin-left: 20%;
-    box-shadow: inset -3em -3em 3em rgba(0, 0, 0, 0.137);
-    border-radius: 800px 250px;
-}
-
-.section1 div h1 {
-    font-size: xxx-large;
-}
-
-a i {
-    color: black;
-    margin-left: 5px;
-    align-items: center;
-}
-
-.button {
-    /* border: 3px solid black; */
-    text-decoration: none;
-    font-size: x-large;
-    padding: 10px 40px;
-    border-radius: 20px;
-    align-items: center;
-    background-color: orange
+@media (max-width: 600px) {
+    .anchors {
+        display: none;
+    }
+    nav {
+        text-align: center;
+    }
+    .section1 {
+        display: grid;
+        grid-template-rows: ifr;
+        grid-gap: 10 20;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 35px 20px;
+        justify-content: center;
+    }
 }
 
 
-/*---------------
- Section-2
- ----------------*/
+/* FOR TABLET */
 
-.container {
-    display: grid;
-    grid-gap: 35px 20px;
-    grid-template-columns: 25% 25% 25%;
-    justify-content: center;
+@media (max-width: 768px) {
+    .anchors {
+        display: none;
+    }
+    nav {
+        text-align: center;
+    }
+    .section1 {
+        display: grid;
+        grid-template-rows: ifr;
+        grid-gap: 10 20;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 35px 20px;
+        justify-content: center;
+    }
+}
+
+
+/* FOR DESKTOP */
+
+@media (min-width: 1200px) {
+    body {
+        margin: 0;
+    }
+    main {
+        margin: 0px 100px 100px 100px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 100px 0px 100px;
+    }
+    nav span h3 {
+        margin: 0px;
+        font-size: x-large;
+        font-family: 'Poppins', sans-serif;
+    }
+    .anchors a {
+        text-decoration: none;
+        margin-left: 30px;
+        text-align: center;
+        align-content: center;
+    }
+    /*---------------
+     Section-1 
+     ----------------*/
+    .section1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10%;
+    }
+    /*---------------
+     Section-2
+     ----------------*/
+    .container {
+        display: grid;
+        grid-gap: 35px 20px;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
+    }
 }
 
 .container-item {
@@ -109,13 +131,80 @@ span p {
 }
 
 .SeeMore {
-    color: darkorange;
+    color: rgba(224, 44, 109, 1);
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
     text-align: end;
+    font-size: large;
 }
 
 .SeeMore i {
-    color: darkorange;
+    color: rgba(224, 44, 109, 1);
+}
+
+
+/*-------------
+        Footer 
+     -------------*/
+
+footer {
+    background-color: rgb(1, 1, 43);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#copyright {
+    font-size: small;
+}
+
+footer h6 {
+    margin: 5px 0px 20px 0px;
+}
+
+footer span {
+    margin: 20px
+}
+
+.section1 div h1 {
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section1 div p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section1 div h1 {
+    font-size: xxx-large;
+}
+
+a i {
+    color: white;
+    margin-left: 5px;
+    align-items: center;
+}
+
+.button {
+    /* border: 3px solid black; */
+    text-decoration: none;
+    font-size: x-large;
+    padding: 10px 40px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+}
+
+.section1 div img:hover {
+    transform: scale(1.3) rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+
+.section1 div img {
+    width: 80%;
+    margin-left: 20%;
+    box-shadow: inset -3em -3em 3em rgba(0, 0, 0, 0.137);
+    border-radius: 800px 250px;
 }
