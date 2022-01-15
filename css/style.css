@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin: 0px 100px 100px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px 0px 100px;
+}
+
+nav span h3 {
+    margin: 0px;
+    font-size: x-large;
+}
+
+.anchors a {
+    text-decoration: none;
+    margin-left: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+
+/*---------------
+ Section-1 
+ ----------------*/
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10%;
+}
+
+.section1 div img {
+    width: 80%;
+    margin-left: 20%;
+    box-shadow: inset -3em -3em 3em rgba(0, 0, 0, 0.137);
+    border-radius: 800px 250px;
+}
+
+.section1 div h1 {
+    font-size: xxx-large;
+}
+
+a i {
+    color: black;
+    margin-left: 5px;
+    align-items: center;
+}
+
+.button {
+    /* border: 3px solid black; */
+    text-decoration: none;
+    font-size: x-large;
+    padding: 10px 40px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: orange
+}
+
+
+/*---------------
+ Section-2
+ ----------------*/
+
+.container {
+    display: grid;
+    grid-gap: 35px 20px;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+}
+
+.container-item {
+    padding: 20px;
+    box-shadow: 5px 10px 18px gray;
+}
+
+.container-item img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container-item p {
+    margin: 0px;
+}
+
+#price {
+    font-size: xx-large;
+    margin: 20px 0px;
+}
+
+.star {
+    color: orange;
+}
+
+span p {
+    color: black;
+}
+
+.rating {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.SeeMore {
+    color: darkorange;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.SeeMore i {
+    color: darkorange;
+}
